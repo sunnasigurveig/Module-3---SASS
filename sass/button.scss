@@ -1,0 +1,40 @@
+/* Button Colors */
+$button-color-black: #000000;
+$button-color-white: #ffffff;
+
+/* Button Hover Colors */
+
+$button-hover-color-blue: #117bff;
+
+/* Hover state styling for buttons*/
+
+.header {
+    .container {
+        .btn:hover { 
+            background: $button-hover-color-blue;
+            cursor: pointer; 
+            transition: background .5s;
+        }
+    }    
+}
+
+.nav {
+    ul {
+        li:hover {
+            background: $button-hover-color-blue;
+            cursor: pointer; 
+            transition: background .5s;  
+          } 
+    }
+
+}
+
+.jumbotron {
+    .container {
+        .btn:hover { 
+            background: $button-hover-color-blue;
+            cursor: pointer; 
+            transition: background .5s;
+        }
+    }    
+}

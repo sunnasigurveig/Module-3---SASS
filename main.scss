@@ -1,0 +1,181 @@
+/* Imports */
+@import'_button.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Roboto:wght@100;300;400;500&display=swap');
+
+/* Font Family */
+$font-family-headings: 'Roboto', sans-serif;
+$font-family-body: 'Noto Sans JP', sans-serif;
+
+/* Font Weights */
+$font-weight-regular: 100;
+$font-weight-bold: 1000;
+
+/* Font Sizes */
+$font-size-small: 12px;
+$font-size-medium: 50px;
+$font-size-large: 100px;
+
+/* Colors */
+$primary-color: #2800FF;
+$secondary-color: #69F7BE;
+
+
+/* Staying in order of apperance*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-family-headings;
+    font-weight: $font-weight-regular;
+
+    .container {
+        margin: 0 auto;
+        max-width: 940px; 
+        padding: 0 10px;
+    }
+}
+.header {
+    background: url(https://content.codecademy.com/projects/innovation-cloud/bg.jpg) no-repeat center center; 
+    background-size: cover;
+    height: 800px;
+    text-align: center; 
+
+    .container {
+        position: relative;
+        top: 200px;
+    }
+
+    h1 {
+        color: $primary-color
+        line-height 100px; 
+        font-size: $font-size-large;
+        margin-top: 0;
+        margin-bottom: 80px;
+        text-transform: uppercase; 
+    }
+
+    p {
+        color: $primary-color
+        font-weight 1000;
+        letter-spacing: 8px;
+        margin-bottom: 40px;
+        margin-top: 0;
+        text-transform: uppercase; 
+    } 
+
+    .btn {
+        color: $font-color-white;
+        background: $button-color-black;
+        padding: 10px 40px;
+        text-decoration: none; 
+        transition: background .5s;   
+    }
+}
+.nav { 
+    background: $background-color-black;
+    height: 80px; 
+    width: 100%;
+    
+        
+    ul {
+        height: 80px;
+        list-style: none;
+        margin: 0 auto; 
+        padding: 0;
+    }
+        
+    li {
+        color: $font-color-white;
+        display: inline-block; 
+        height: 80px;
+        line-height: 80px; 
+        list-style: none;
+        padding: 0 10px;
+        transition: background .5s; 
+    }
+}    
+.main {
+
+    .container {
+        margin: 80px auto;
+        font: $primary-color;
+    }  
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        float: left;
+        margin: 50px 80px 50px 0;
+    } 
+} 
+.jumbotron {
+    background: url(https://content.codecademy.com/projects/innovation-cloud/jumbotron_bg.jpg) center center;
+    background-size: cover;
+    height: 600px; 
+    .container {
+        position: relative;
+        top: 220px;
+    }
+    h2 {
+        color: $font-color-white;
+        text-align: right; 
+    }
+    p {
+        color: $font-color-white; 
+        text-align: right; 
+    }
+    .btn {
+        color: $font-color-white;
+        background: $button-color-black;
+        padding: 10px 40px;
+        text-decoration: none; 
+        transition: background .5s;
+        margin: 10px 0 0;
+        float: right; 
+    }       
+
+}       
+footer { 
+   
+    height: 80px; 
+    padding-bottom: 50px;
+    background: $background-color-black;
+    .container {
+    
+    p { 
+        color: $font-color-white;
+        font-size: $font-size-small;  
+        height: 80px; 
+        line-height: 80px;
+        margin: 0;  
+    }
+    }
+}
+  
+  @media (min-width:850px) {
+    .header h1 {
+      font-size: 120px;
+    }
+  }
+
+    
+  @media (max-width: 500px) {
+    .header h1 {
+      font-size: $font-size-medium;
+      line-height: 64px;
+      }
+
+    .main, .jumbotron {
+        padding: 0 30px;
+      }
+    
+      .main img {
+        width: 100%;
+      }
+    }  
